@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<table>
+    <tr>
+        <td colspan="2"><input type="text" id="a" placeholder="Nhap so"></td>
+
+        <td colspan="2"><input type="text" id="b" placeholder="Nhap so"></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="Cong()">Cộng</button>
+        </td>
+        <td>
+            <button onclick="Tru()">Trừ</button>
+        </td>
+        <td>
+            <button onclick="Nhan()">Nhân</button>
+        </td>
+        <td>
+            <button onclick="Chia()">Chia</button>
+        </td>
+    </tr>
+</table>
+<tr>
+    <div id="Kết quả : ">Kết quả</div>
+</tr>
+<script>
+    function Cong() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let resul=a + b
+        document.getElementById("Kết quả : ").innerHTML="Kết quả : " + result
+    }
+    function Tru() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let result = a - b
+        document.getElementById("Kết quả : ").innerHTML="Kết quả : " + result
+    }
+    function Nhan() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let result = a * b
+        document.getElementById("Kết quả : ").innerHTML="Kết quả : " + result
+    }
+    function Chia() {
+        let a = +document.getElementById("a").value
+        let b = +document.getElementById("b").value
+        let result = a / b
+        document.getElementById("Kết quả : ").innerHTML="Kết quả : " + result
+    }
+
+</script>
+</body>
+</html>
